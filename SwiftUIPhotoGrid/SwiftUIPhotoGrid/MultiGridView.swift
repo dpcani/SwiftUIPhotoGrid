@@ -10,6 +10,8 @@ import SwiftUI
 struct MultiGridView: View {
     
     @State var gridLayout = [ GridItem(.adaptive(minimum: 100)), GridItem(.flexible()) ]
+    @Environment(\.horizontalSizeClass) var horizontalSizeClass: UserInterfaceSizeClass?
+    @Environment(\.verticalSizeClass) var verticalSizeClass: UserInterfaceSizeClass?
     
     var body: some View {
         NavigationStack {
@@ -43,6 +45,9 @@ struct MultiGridView: View {
                 .animation(.interactiveSpring(), value: gridLayout.count)
             }
             .navigationTitle("Coffee Feed")
+        }
+        .onChange(of: verticalSizeClass) { _ in
+            gridLayout = [ GridItem(.adaptive(minimum: verticalSizeClass == .compact ? 100 : 250)), GridItem(.flexible()) ]
         }
     }
 }
