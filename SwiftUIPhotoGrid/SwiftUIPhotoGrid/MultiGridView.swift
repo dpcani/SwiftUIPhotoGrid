@@ -111,5 +111,6 @@ struct MultiGridView: View {
 struct MultiGridView_Previews: PreviewProvider {
     static var previews: some View {
         MultiGridView()
+            .previewDevice("iPad (10th generation)")
     }
 }
