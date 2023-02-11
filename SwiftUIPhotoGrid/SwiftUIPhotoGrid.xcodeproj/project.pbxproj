@@ -11,6 +11,7 @@
 		0B937C822997F43C0011ED82 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B937C812997F43C0011ED82 /* ContentView.swift */; };
 		0B937C842997F43D0011ED82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B937C832997F43D0011ED82 /* Assets.xcassets */; };
 		0B937C872997F43D0011ED82 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B937C862997F43D0011ED82 /* Preview Assets.xcassets */; };
+		0B937C902997F4B70011ED82 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B937C8F2997F4B70011ED82 /* Photo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		0B937C812997F43C0011ED82 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0B937C832997F43D0011ED82 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0B937C862997F43D0011ED82 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0B937C8F2997F4B70011ED82 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +53,7 @@
 		0B937C7E2997F43C0011ED82 /* SwiftUIPhotoGrid */ = {
 			isa = PBXGroup;
 			children = (
+				0B937C8D2997F4990011ED82 /* Domain */,
 				0B937C7F2997F43C0011ED82 /* SwiftUIPhotoGridApp.swift */,
 				0B937C812997F43C0011ED82 /* ContentView.swift */,
 				0B937C832997F43D0011ED82 /* Assets.xcassets */,
@@ -65,6 +68,22 @@
 				0B937C862997F43D0011ED82 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0B937C8D2997F4990011ED82 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				0B937C8E2997F49F0011ED82 /* Model */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		0B937C8E2997F49F0011ED82 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0B937C8F2997F4B70011ED82 /* Photo.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +156,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B937C902997F4B70011ED82 /* Photo.swift in Sources */,
 				0B937C822997F43C0011ED82 /* ContentView.swift in Sources */,
 				0B937C802997F43C0011ED82 /* SwiftUIPhotoGridApp.swift in Sources */,
 			);
