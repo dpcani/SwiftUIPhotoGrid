@@ -12,4 +12,4 @@ struct Photo: Identifiable {
     var name: String
 }
 
-let samplesPhotos = (1...20).map{ Photo(name: "Coffee-\($0)")}
+let samplesPhotos = (1...20).map{ Photo(name: "coffee-\($0)")}
